@@ -14,7 +14,7 @@ trusted reporter, no admin key.
 
 | | |
 |---|---|
-| **Live app** | https://deadlinestake.vercel.app _(set after first Vercel deploy)_ |
+| **Live app** | https://deadlinestake.vercel.app |
 | **Contract** | [`0x77AB5BeEd7B77Df019D0BC5c33A303D126A7221d`](https://explorer-studio.genlayer.com/address/0x77AB5BeEd7B77Df019D0BC5c33A303D126A7221d) |
 | **Network** | GenLayer **studionet**, chain id `61999` (Studio-hosted → Explorer status *Preview*) |
 | **Repo** | https://github.com/phu1271997/deadlinestake |
