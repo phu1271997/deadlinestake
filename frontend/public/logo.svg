@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#191633"/><stop offset="1" stop-color="#0b0a18"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#a9a0ff"/><stop offset="0.55" stop-color="#7a6bf0"/>
+      <stop offset="1" stop-color="#5a46d6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#7a6bf0" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#7a6bf0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="dialClip">
+      <circle cx="256" cy="262" r="140"/>
+    </clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#glow)"/>
+  <!-- stopwatch crown -->
+  <path d="M230 86 H282 M256 86 V116" stroke="url(#mark)" stroke-width="22" stroke-linecap="round"/>
+  <!-- the deadline dial -->
+  <circle cx="256" cy="262" r="140" fill="none" stroke="url(#mark)" stroke-width="24"/>
+  <!-- the fork: YES up / NO down resolving from the centre, clipped to the dial -->
+  <g clip-path="url(#dialClip)" fill="none" stroke="url(#mark)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 262 L344 196"/>
+    <path d="M256 262 L344 330"/>
+    <circle cx="256" cy="262" r="20" fill="url(#mark)" stroke="none"/>
+  </g>
+</svg>
